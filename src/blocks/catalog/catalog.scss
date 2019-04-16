@@ -1,0 +1,66 @@
+.catalog {
+  background: #f3f3f3;
+}
+.catalog-item__body {
+  padding: 28px 38px 40px;
+  background: $white;
+}
+.catalog-item__heading {
+  color: $light-blue;
+}
+.catalog-item__direction {
+  font-size: 14px;
+}
+.catalog-item__duration {
+  font-size: 14px;
+}
+.catalog-item__price {
+  font-family: $roboto;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.dw-cluster {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.dw-panel {
+  margin-bottom: 20px;
+}
+
+.w {
+  max-width: 556px;
+}
+
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 768px) {
+  .h-lg {
+    height: 430px;
+  }
+
+  .h-sm {
+    height: 205px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .h-sm {
+    max-height: 305px;
+    height: 100%;
+    @include col();
+  }
+
+  .h-md {
+    max-height: 410px;
+    height: 100%;
+    @include col();
+  }
+
+  .h-lg {
+    max-height: 630px;
+    height: 100%;
+    @include col();
+  }
+}

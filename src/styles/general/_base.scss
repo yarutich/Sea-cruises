@@ -1,0 +1,82 @@
+body {
+  font-size: 16px;
+  color: $dark-blue;
+  font-family: $regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  @include container();
+  @include sm(max-width, 510px);
+  @include md(max-width, 690px);
+  @include lg(max-width, 930px);
+  @include xl(max-width, 1110px);
+}
+
+.img-responsive {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  color: $dark-blue;
+  font-family: $roboto;
+}
+
+.heading-hero {
+  font-size: 100px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.heading-h2 {
+  display: block;
+  font-size: 36px;
+}
+
+.heading-h3 {
+  font-size: 18px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.uppercase-none {
+  text-transform: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+	font-family: $bold;
+}
+
+.btn {
+  width: 200px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $light-blue;
+  color: $white;
+  border-radius: 3px;
+  margin: auto;
+
+  &:hover {
+    background: $dark-blue;
+  }
+}
